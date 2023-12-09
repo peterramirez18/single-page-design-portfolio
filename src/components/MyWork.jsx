@@ -10,9 +10,30 @@ import "swiper/css/navigation";
 
 import { Navigation, Autoplay } from "swiper/modules";
 import { IconArrowLeft } from "./Icons";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const MyWork = () => {
-  const Works = [Image03,Image04, Image01 , Image05, Image02];
+  const Works = [Image03, Image04, Image01, Image05, Image02];
+
+  //get width screen
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+    });
+  }, [width]);
+  const getSlidesPerView = () => {
+    if (width < 700) {
+      return 1.3;
+    } else if (width < 900) {
+      return 1.9;
+    } else if (width < 1800) {
+      return 2.5;
+    } else {
+      return Works.length;
+    }
+  };
   return (
     <section className=" mt-[87px] ">
       <h3 className=" text-center">My Work</h3>
@@ -20,7 +41,7 @@ const MyWork = () => {
         modules={[Autoplay, Navigation]}
         className="mt-[56px] mySwiper"
         spaceBetween={30}
-        slidesPerView={2.5}
+        slidesPerView={getSlidesPerView()}
         autoplay={{
           delay: 2000,
         }}

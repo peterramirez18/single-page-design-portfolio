@@ -4,21 +4,21 @@
 
 @layer utilities {
   .container {
-    @apply max-w-[1111px] mx-auto ;
+    @apply max-w-[1191px] mx-auto px-4 md:px-10 ;
   }
   h1 {
-    @apply text-[56px] font-bold leading-[70px];
+    @apply text-[46px] lg:text-[56px]  font-bold leading-[60px] lg:leading-[70px];
   }
   h2 {
-    @apply text-[40px] font-bold leading-[51px];
+    @apply text-[30px] lg:text-[40px]  font-bold leading-[41px] lg:leading-[51px];
   }
   h3 {
-    @apply text-[32px] font-bold leading-[40px];
+    @apply text-[22px] lg:text-[32px]  font-bold leading-[30px] lg:leading-[40px];
   }
   p {
-    @apply text-[18px] leading-[28px];
+    @apply text-[18px] lg:text-[18px]  leading-[28px];
   }
   body {
-    @apply text-[16px] leading-[16px] bg-[#FFF7F0];
+    @apply text-[16px] lg:text-[16px]  leading-[16px] bg-[#FFF7F0];
   }
 }
