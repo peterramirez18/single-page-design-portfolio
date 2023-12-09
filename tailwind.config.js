@@ -20,6 +20,9 @@ export default {
       fontFamily: {
         'sans': ['Plus Jakarta Sans', 'sans-serif'],
       },
+      animation: {
+        'spin-slow': 'spin 2s linear infinite',
+      }
     },
   },
   plugins: [],

@@ -55,8 +55,8 @@ const Hero = () => {
     LottieFile({ id: "ui-ux", file: uiuxAnimation })
     LottieFile({ id: "photography", file: photographyAnimation })
     return (
-        <section className="container">
-            <div className="flex flex-col items-center mt-[66px] text-center">
+        <section className="container ">
+            <div className="flex flex-col items-center mt-[66px] text-center ">
                 <h1>Design solutions made easy</h1>
                 <p className="mt-[25px] max-w-[53ch]">
                     With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.
