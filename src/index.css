@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .container {
+    @apply max-w-[1111px] mx-auto ;
+  }
+  h1 {
+    @apply text-[56px] font-bold leading-[70px];
+  }
+  h2 {
+    @apply text-[40px] font-bold leading-[51px];
+  }
+  h3 {
+    @apply text-[32px] font-bold leading-[40px];
+  }
+  p {
+    @apply text-[18px] leading-[28px];
+  }
+  body {
+    @apply text-[16px] leading-[16px];
+  }
+}
