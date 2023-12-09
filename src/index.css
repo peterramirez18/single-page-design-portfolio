@@ -19,6 +19,6 @@
     @apply text-[18px] leading-[28px];
   }
   body {
-    @apply text-[16px] leading-[16px];
+    @apply text-[16px] leading-[16px] bg-[#FFF7F0];
   }
 }

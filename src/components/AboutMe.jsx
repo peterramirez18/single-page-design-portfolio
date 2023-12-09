@@ -1,6 +1,6 @@
 import Image from "../assets/image-amy.webp";
 import Button from "./Button";
-import OvalIcon from "./Icons";
+import { IconOval } from "./Icons";
 
 const AboutMe = () => {
   return (
@@ -12,7 +12,7 @@ const AboutMe = () => {
         src={Image}
         alt="Amy Photo"
       />
-      <OvalIcon className=" animate-spin-slow absolute w-[64px] left-[65px] top-[103px]" />
+      <IconOval className=" animate-spin-slow absolute w-[64px] left-[65px] top-[103px]" />
 
       <div>
         <h2 className=" max-w-[19ch]">
