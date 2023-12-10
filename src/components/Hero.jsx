@@ -1,4 +1,3 @@
-import classNames from "classNames";
 import { LottieFile } from "../hook/LottieFile";
 
 import graphicDesignAnimation from "../assets/motions/pattern-graphic-design.json";
@@ -7,7 +6,7 @@ import illustrationsAnimation from "../assets/motions/pattern-illustrations.json
 import motionGraphicsAnimation from "../assets/motions/pattern-motion-graphics";
 import uiuxAnimation from "../assets/motions/pattern-ui-ux.json";
 import photographyAnimation from "../assets/motions/pattern-photography.json";
-
+import cn from "../hook/Cn";
 
 const Hero = () => {
   const skills = [
@@ -66,7 +65,7 @@ const Hero = () => {
         </p>
       </div>
       <div
-        className={classNames(
+        className={cn(
           "mt-[80px] grid grid-cols-2 grid-rows-0 gap-[24px]",
           "md:grid-cols-4 md:grid-rows-3",
           "lg:grid-cols-6 lg:grid-rows-2"
@@ -75,7 +74,7 @@ const Hero = () => {
         {skills.map((skill) => {
           return (
             <div
-              className={classNames(
+              className={cn(
                 "p-[24px] rounded-lg flex items-end pb-[32px] relative min-h-[158px]",
                 skill.id === 1 && "col-span-2 row-span-2 h-[364px]",
                 skill.id === 4 && "col-span-2 h-full lg:h-[182px] ",
@@ -89,7 +88,7 @@ const Hero = () => {
                 {skill.name}
               </span>
               <div
-                className={classNames(
+                className={cn(
                   " absolute  top-[24px] right-[24px]",
                   skill.id === 1 ? "h-[192px]" : "h-[64px]"
                 )}
