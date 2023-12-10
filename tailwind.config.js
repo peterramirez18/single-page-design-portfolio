@@ -16,6 +16,7 @@ export default {
         black: '#030303',
         gray: '#7A746E',
         white: '#FFF7F0',
+        brown: '#7A746E'
       },
       fontFamily: {
         'sans': ['Plus Jakarta Sans', 'sans-serif'],

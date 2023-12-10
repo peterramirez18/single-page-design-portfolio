@@ -18,7 +18,7 @@ const AboutMe = () => {
         <h2 className=" max-w-[19ch]">
           I’m Amy, and I’d love to work on your next project
         </h2>
-        <p className=" mt-[34px] mb-[32px]">
+        <p className=" mt-[34px] mb-[32px] text-brown">
           I love working with others to create beautiful design solutions. I’ve
           designed everything from brand illustrations to complete mobile apps.
           I’m also handy with a camera!
