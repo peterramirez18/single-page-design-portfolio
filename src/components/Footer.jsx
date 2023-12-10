@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="mt-[57px] mb-[64px] container flex items-center justify-between ">
       <img width={64} height={64} src={Logo} alt="Logo" />
-      <Button>Free Consultation</Button>
+      <Button id={"footer-btn"}>Free Consultation</Button>
     </footer>
   );
 };

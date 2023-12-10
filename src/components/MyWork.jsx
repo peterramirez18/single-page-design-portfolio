@@ -59,10 +59,10 @@ const MyWork = () => {
         ))}
       </Swiper>
       <div className="flex gap-x-4 justify-center mt-[56px]">
-        <button className="my-swiper-button-prev w-[64px] aspect-square bg-black hover:bg-purple transition-colors duration-500 text-white grid place-content-center rounded-full">
+        <button id="arrow-left-btn" aria-label="arrow-left-btn" className="my-swiper-button-prev w-[64px] aspect-square bg-black hover:bg-purple transition-colors duration-500 text-white grid place-content-center rounded-full">
           <IconArrowLeft />
         </button>
-        <button className="my-swiper-button-next w-[64px] aspect-square bg-black hover:bg-purple transition-colors duration-500 text-white grid place-content-center rounded-full">
+        <button id="arrow-right-btn" aria-label="arrow-right-btn" className="my-swiper-button-next w-[64px] aspect-square bg-black hover:bg-purple transition-colors duration-500 text-white grid place-content-center rounded-full">
           <IconArrowLeft className=" rotate-180" />
         </button>
       </div>

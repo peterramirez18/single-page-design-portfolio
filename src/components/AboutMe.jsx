@@ -23,7 +23,7 @@ const AboutMe = () => {
           designed everything from brand illustrations to complete mobile apps.
           I’m also handy with a camera!
         </p>
-        <Button classname="bg-orange">Free Consultation</Button>
+        <Button id={"about-me-btn"} classname="bg-orange">Free Consultation</Button>
       </div>
     </section>
   );
